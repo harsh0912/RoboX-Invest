@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>RoboX Invest</title>
+
+	<!-- External css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- header -->
+			<nav class="navbar navbar-expand-md d-block">
+				<div class="row mx-0">
+					<div class="col-sm-6 col-12 pl-0">
+						<a class="navbar-brand" href="#">
+							<img src="img/header-logo.png" class="img-fluid" alt="RoboX Invest">
+						</a>
+					</div>
+					<div class="col-sm-6 col-12 mobile-margin-top">
+						<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button> -->
+						<button class="navbar-toggler first-button navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+							>
+							<div class="animated-icon1"><span></span><span></span><span></span></div>
+						</button>
+						<ul class="navbar-nav float-right right-actions-nav">
+								<li class="nav-item">
+									<a href="#">
+										<img src="img/bell.png" class="img-fluid" alt="Notifications">
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="icon-circle">
+										<span>A</span>
+									</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mx-0 border-bottom-blue pt-3">
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav float-right px-3 bottom-nav float--none">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Dashboard</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Goals</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Funds</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link" href="#">Collections</a>
+							</li>    
+						</ul>
+					</div>  
+				</div>
+			</nav>
+			<!-- header end-->
+		</div>
+	</header>
+
+	<!-- main-body -->
+		<section>
+			<div class="container">
+				<div class="row mx-0 pl-5 align-items-center mt-4">
+					<div class="main-title">
+						<h2>
+							Create your own portfolio
+							<br />
+						</h2>
+						<p>Choose funds based on your comfort and understanding. And create your own portfolio.</p>
+					</div>
+					<div class="action">
+						<a href="#" class="btn btn-outline" title="Click To See All Invested Funds">
+							See all invested Funds&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-sm-2 col-12">
+						<div class="off-bg">
+							<div class="row mx-0 mb-3 align-items-center justify-content-space-between">
+								<h6>Filter</h6>
+								<a href="#">Clear all</a>
+							</div>
+							<div class="accordion" id="accordion2">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+												Fund Category
+											</a>
+										</div>
+										<div id="collapseOne" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<ul>
+													<li>
+														<input type="checkbox" class="form-control" checked> <label>All</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Gold</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Larger Cap</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Mid Cap</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Small Cap</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Multi Cap</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Balanced</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Liquid</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+												Rating
+											</a>
+										</div>
+										<div id="collapseTwo" class="accordion-body collapse">
+											<div class="accordion-inner">
+													<ul>
+														<li>
+															<input type="checkbox" class="form-control" checked> <label> All</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> 1 Star</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> 2 Star</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> 3 Star</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> 4 Star</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> 5 Star</label>
+														</li>
+														<li>
+															<input type="checkbox" class="form-control"> <label> Unrated</label>
+														</li>
+													</ul>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+												AMC	
+											</a>
+										</div>
+										<div id="collapseThree" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<ul>
+													<li>
+														<input type="checkbox" class="form-control" checked> <label> All</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> 1 Star</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> 2 Star</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> 3 Star</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> 4 Star</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> 5 Star</label>
+													</li>
+													<li>
+														<input type="checkbox" class="form-control"> <label> Unrated</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-7 col-12">
+						<div class="row">
+							<div class="col-sm-9 col-12">
+								<form action="#" method="post">
+									<div class="form-group mb-0">
+										<img class="search-icon img-fluid" src="img/magnifying-glass.png" alt="magnifying-glass">
+										<input type="text" class="form-control search-box" name="search" placeholder="Search all mutual funds">
+									</div>
+								</form>
+							</div>
+							<div class="col-sm-3 col-12">
+								<select name="sort-by" id="sortBy" class="form-control sort-by-select-box">
+									<option value="sort-by" selected>Sort</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mx-0">
+							<ul class="funds-list">
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/mirae_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Mirae Asset Emerging Bluechip Fund Direct Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/nippon_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Nippon India Gilt Securities Fund Direct Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/axis_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Axis Bluechip Fund Direct Plan Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/sbi_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>SBI Banking & Financial Services Fund Direct Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/mirae_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Mirae Asset Emerging Bluechip Fund Direct Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/nippon_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Nippon India Gilt Securities Fund Direct Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="d-flex align-items-center">
+											<div>
+												<img src="img/axis_groww.png" alt="" class="img-fluid">
+											</div>
+											<div>
+												<h6>Axis Bluechip Fund Direct Plan Growth</h6>
+												<p>
+													<span>
+														Return: 18.32%
+													</span>
+													<span>
+														Fund Size: 6000.01 Cr
+													</span>
+													<span>
+														Aggressive
+													</span>
+													<span>
+														Debt
+													</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="col-sm-3 col-12">
+						<div class="off-bg py-2">
+							<div class="d-flex align-items-center funds-list border-0">
+								<div>
+									<img src="img/axis_groww.png" alt="" class="img-fluid">
+								</div>
+								<div>
+									<h6>Axis Bluechip Fund Direct Plan Growth</h6>
+									<p>
+										<span>
+											Debt
+										</span>
+										<span>
+											Moderately Aggressive
+										</span>
+									</p>
+								</div>
+							</div>
+							<div class="mt-3">
+								<form action="#" method="post" class="apply-fund-form">
+									<div class="form-group">
+										<label>Lumpsum Amount</label>
+										<input type="number" name="lumpsum-amount" value="30000" class="form-control">
+										<span>(Minimum of ₹1,00,000; Multiples of ₹1)</span>
+									</div>
+									<div class="form-group">
+										<label>SIP Amount</label>
+										<input type="number" name="lumpsum-amount" value="30000" class="form-control">
+										<span>(Minimum of ₹1,00,000; Multiples of ₹1)</span>
+									</div>
+									<div class="form-group">
+										<label>SIP Date <span>(Every month)</span> <span><img src="img/info.png" alt="info" data-toggle="tooltip" title="Information About Monthly Date Settings" class="img-fluid"></span> </label>
+										<select name="sip-date" class="form-control">
+											<option value="1" selected>1st</option>
+											<option value="2">2nd</option>
+											<option value="3">3rd</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="ADD" class="btn btn-primary w-100">
+										<input type="button" value="CANCEL" class="btn btn-outline d-block w-100">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- main-body -->
+
+	<footer>
+		<div class="container h-100">
+			<div class="row mx-0 h-100 align-items-center">
+				<div class="col-sm-6 col-12">
+					<p>&copy;&nbsp;Copyright 2020-2021</p>
+				</div>
+				<div class="col-sm-6 col-12">
+					<p class="justify-content-flex-end">Powered by <img src="img/header-logo.png" class="img-fluid" alt="RoboX Invest"></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$('.first-button').on('click', function () {
+				$('.animated-icon1').toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>
